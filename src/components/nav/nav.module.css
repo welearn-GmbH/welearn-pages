@@ -1,0 +1,39 @@
+.nav {
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
+.inner {
+	flex: 1;
+	max-width: var(--width-page);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.separator {
+	height: 18px;
+	width: 1px;
+	background: var(--color-neutral-silver);
+}
+
+@media (max-width: 900px) {
+	.links {
+		display: none;
+	}
+}

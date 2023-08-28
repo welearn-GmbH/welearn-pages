@@ -1,0 +1,60 @@
+:root {
+	--font-headline: 'Outfit', sans-serif;
+	--font-stack: 'Open Sans', system-ui, sans-serif;
+
+	/* colors */
+	--color-brand-primary: #e4831e;
+	--color-brand-primaryHover: #f89a36;
+	--color-brand-secondary: #ff564e;
+	--color-brand-light: #f7dabc;
+
+	--color-brand-gradient: linear-gradient(20deg, #e4831e 30%, #ff564e 100%);
+
+	--color-neutral-white: #ffffff;
+	--color-neutral-pearl: #f7f7f7;
+	--color-neutral-sand: #ededed;
+	--color-neutral-silver: #cccccc;
+	--color-neutral-dust: #808080;
+	--color-neutral-night: #1d1e1f;
+	--color-neutral-mist: #fcfcfc;
+
+	--color-additional-blush: #ff6a9a;
+	--color-additional-fire: #d3593d;
+	--color-additional-rose: #d90063;
+
+	/* shadows */
+	--shadow-header: 0 4px 24px 0 rgba(68, 71, 73, 0.04);
+	--shadow-card: 0 4px 24px 0 rgba(43, 45, 58, 0.16);
+	--shadow-cardMini: 0 2px 16px 0 rgba(68, 71, 73, 0.08);
+	--shadow-box: 0 4px 16px 0 rgba(68, 71, 73, 0.04);
+	--shadow-button: 0px 2px 8px rgba(0, 0, 0, 0.12);
+	--shadow-buttonIcon: 0 1px 2px 0 rgba(68, 71, 73, 0.16),
+		0 2px 6px 0 rgba(68, 71, 73, 0.1);
+	--shadow-inputSearch: 0 4px 24px -12px rgba(68, 71, 73, 0.24);
+	--shadow-flyout: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
+
+	/* z index */
+	--zIndex-highest: 100;
+	--zIndex-modal: 60;
+	--zIndex-header: 50;
+	--zIndex-player: 50;
+	--zIndex-cookie: 40;
+	--zIndex-subscribeNow: 30;
+	--zIndex-lowest: 10;
+
+	/* dimensions */
+	--width-page: 1460px;
+
+	/* motions */
+	--motion-transition: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+	/* gradient */
+	--gradient-card: linear-gradient(
+		180.25deg,
+		rgba(35, 40, 43, 0) 33.28%,
+		#23282b 99.78%
+	);
+
+	/* dynamically created UI components */
+	--button-background-color: transparent;
+}

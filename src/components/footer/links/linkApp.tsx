@@ -1,13 +1,13 @@
 import {StaticImport} from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
-import React, {FC} from 'react';
+import {FC} from 'react';
 
 interface ILinkAppProps {
-	image: StaticImport;
+    image: StaticImport;
 }
 
 const LinkApp: FC<ILinkAppProps> = ({image}) => {
-	return <Image src={image} alt="app" />;
+    return <Image src={image} alt="app" />;
 };
 
 export default LinkApp;

@@ -12,7 +12,7 @@ const CoursesCategories: FC<ICoursesCategoriesProps> = () => {
     const {data, isLoading} = useQuery(
         [QueryKey.COURSES_CATEGORIES],
         CoursesService.getCategories,
-        {enabled: false},
+        {staleTime: 10000, refetchOnWindowFocus: false},
     );
 
     if (isLoading) {

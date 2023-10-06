@@ -13,6 +13,7 @@ const Category: FC<ICategoryProps> = ({category}) => {
     const {data, isLoading} = useQuery(
         [QueryKey.CATEGORY_COURSES(category.categorySlug)],
         () => CoursesService.getCoursesForCategory(category.categorySlug),
+        {staleTime: 10000, refetchOnWindowFocus: false},
     );
 
     if (isLoading) {

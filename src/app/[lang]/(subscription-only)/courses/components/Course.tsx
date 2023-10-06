@@ -18,6 +18,7 @@ const Course: FC<ICourseProps> = ({course}) => {
                 marginRight: '1rem',
                 borderRadius: 5,
                 overflow: 'hidden',
+                background: 'black',
             }}
         >
             <div

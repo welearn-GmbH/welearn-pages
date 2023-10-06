@@ -5,6 +5,7 @@ import Providers from '../../core/query/Providers';
 import '../../styles/globals.css';
 import '../../styles/reset.css';
 import '../../styles/theme.css';
+import '../../styles/typography.css';
 import styles from './layout.module.css';
 
 const outfit = Outfit({subsets: ['latin']});

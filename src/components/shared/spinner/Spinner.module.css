@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.svg {
+    animation: svg 1.5s linear infinite;
+}
+
+.svg circle {
+    stroke: var(--color-brand-primary);
+    stroke-width: 10;
+    stroke-dasharray: var(--circumference);
+    stroke-linecap: round;
+    fill: transparent;
+    transform-origin: center;
+    animation: circle 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes circle {
+    0% {
+        stroke-dashoffset: calc(var(--circumference) * 0.3);
+    }
+    100% {
+        stroke-dashoffset: calc(var(--circumference) * 0.9);
+    }
+}
+
+@keyframes svg {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(720deg);
+    }
+}

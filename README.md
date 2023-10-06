@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Auth
 
-## Getting Started
+nextjs-auth
+or in-house solution
 
-First, run the development server:
+## In-house
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Wrap auth routes with `withAuthRoute` HOC (like AuthRouteGuard)
+`withAuthRoute` - redirects to login (or elsewhere) if no auth
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Store auth state (tokens) 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Store
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Redux is overly verbose, even with toolkit
+We can use smaller state, e.g. Zustand + react-query
 
-## Learn More
+react-query allows to optionally prefetch to enable SSR
+automatically refetches on page refocus
+can configure periodic refreshing, etc
+super convenient and easy to use
 
-To learn more about Next.js, take a look at the following resources:
+todo - test if prefetch components can be nested (they use <Hydrate> provider)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Localization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`[lang]` slug
+dictionaries/i18n (can reuse our jsons)
+https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Server - Client - Server - Client component nesting
+https://app-router.vercel.app/context

@@ -85,17 +85,17 @@ time,
 mark,
 audio,
 button,
+input,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	color: yellow;
-	text-decoration: none;
-	box-sizing: border-box;
-	background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -109,25 +109,25 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+    display: block;
 }
 
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
